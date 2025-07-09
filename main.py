@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 
 # Load embedding model once
-@st.cache(allow_output_mutation=True)
+@st.cache_data()
 def load_model():
     return SentenceTransformer("all-MiniLM-L6-v2")
 
